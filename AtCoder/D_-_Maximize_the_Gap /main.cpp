@@ -1,4 +1,5 @@
 #include <iostream>
+#include <set>
 
 using namespace std;
 
@@ -11,6 +12,7 @@ int N, K;
 int min = -1;
 int maximin = -1;
 Cloth clothes[100000];
+vector<set<Cloth>> Set;
 
 /*
  * 핵심 원리
@@ -23,6 +25,22 @@ Cloth clothes[100000];
 // 옷과 옷 사이의 거리 계산
 int score(Cloth a, Cloth b) {
     // TODO: 옷과 옷 사이의 가장 가까운 부분끼리의 좌표의 차이를 절댓값으로 계산
+}
+
+// 옷 오름차순 정렬
+void sort_clothes_in_ascending_order() {
+
+}
+
+// K 개의 겹치지 않는 옷 집합들 찾기
+void find_K_non_overlapping_clothes_sets() {
+
+    // NOTE: 옷 집합 찾을 때는 재귀적이므로 아마 DP?
+
+    // TODO: 비교하는 옷 a, b 가 겹치지 않는 경우, b 를 집합에 포함 (a 는 이미 집합에 포함된 옷)
+    if () {
+
+    }
 }
 
 // 입력
