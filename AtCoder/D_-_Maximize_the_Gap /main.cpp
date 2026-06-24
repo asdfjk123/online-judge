@@ -27,8 +27,10 @@ vector<set<Cloth>> Set;
  */
 
 // 옷과 옷 사이의 거리 계산
+// 절대 거리가 a < b 라고 가정
 int score(Cloth a, Cloth b) {
     // TODO: 옷과 옷 사이의 가장 가까운 부분끼리의 좌표의 차이를 절댓값으로 계산
+    return b.L - a.R;
 }
 
 // 옷 오름차순 정렬
